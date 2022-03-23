@@ -1,0 +1,27 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+:root {
+    --red: #ff0000;
+    --red-base: #FF3737;
+    --red-secondary: #f12a2a;
+    --white-base: #FFFFFF;
+    --white-smoke-base: #EBEBEB;
+    --black-base: #000000;
+}
+
+.cover-viewport {
+    height: ;
+    width: 100%;
+}
+
+.fixed-bg {
+    background: url(/media/images/billa-hero.svg) no-repeat fixed center/cover;
+}

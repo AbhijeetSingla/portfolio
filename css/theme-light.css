@@ -35,3 +35,26 @@ body {
     background-size: cover;
 }
 
+.fixed-bg h1 {
+    font-size: 3rem;
+    margin-block-end: 0;
+}
+
+.welcome-screen-arrow {
+    margin-block-start: 5rem;
+}
+
+.welcome-screen-div {
+    background: linear-gradient(to bottom, transparent, white 100%);
+    flex-flow: column nowrap;
+    justify-content: center ;
+    align-content: center;
+    text-align: center;
+    --gap: 0;
+}
+
+.welcome-screen-div>* {
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
+    font-size: 110%;
+}

@@ -18,10 +18,14 @@ body {
 }
 
 .cover-viewport {
-    height: ;
+    height: 100vh;
     width: 100%;
 }
 
 .fixed-bg {
-    background: url(/media/images/billa-hero.svg) no-repeat fixed center/cover;
+    background-image: url(/media/images/billa-hero-4K.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }

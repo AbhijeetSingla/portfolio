@@ -17,10 +17,15 @@ body {
     --black-base: #000000;
 }
 
-.cover-viewport {
-    height: 100vh;
-    width: 100%;
-}
+/* utility classes*/
+
+.uppercase { text-transform: uppercase;}
+.cover-viewport { height: 100vh; width: 100%;}
+.list-style-none { list-style: none; padding: 0; margin: 0;}
+.list-inline { display: flex; gap: var(--list-gap, 2rem);}
+.flex { display: flex; gap: var(--gap, 1rem);}
+
+/* welcome screen */
 
 .fixed-bg {
     background-image: url(/media/images/billa-hero-4K.svg);
@@ -29,3 +34,4 @@ body {
     background-position: center;
     background-size: cover;
 }
+

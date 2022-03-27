@@ -73,7 +73,6 @@ body {
     margin-inline-start: 2rem;
     margin-inline-end: 2rem;
     margin-block-end: 1.5rem;
-    /* brand name or logo decor */
 }
 
 .nav-base {
@@ -169,6 +168,10 @@ body {
     --gap: 3rem;
 }
 
+.footer-social-links {
+    --gap: 4rem;
+}
+
 /* blogs */
 
 .blog-list {
@@ -194,8 +197,25 @@ body {
     border-color: var(--grey-fade);
     --max-spc-width: 100%;
     transition: 90ms ease-out;
-    overflow-y: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    overflow-wrap: break-word;
 }
+
+.blog-card h1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.blog-card p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
 .blog-card>div {
     margin-block-start: 0.6rem;
     margin-inline-start: 0.8rem;

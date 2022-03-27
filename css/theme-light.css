@@ -111,7 +111,7 @@ body {
     font-weight: 400;
 }
 
-.nav-base a:hover:not(.link-active) {
+.nav-base a:hover:not(.link-active, .txt-decor-none) {
     text-decoration: underline;
 }
 

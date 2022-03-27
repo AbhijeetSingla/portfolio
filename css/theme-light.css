@@ -3,6 +3,10 @@ html {
     scroll-behavior: smooth;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -70,11 +74,14 @@ body {
 
 /* navigation */
 
-#primary-nav-logo {
+.primary-nav-logo {
     margin-block-start: 1.5rem;
     margin-inline-start: 2rem;
     margin-inline-end: 2rem;
     margin-block-end: 1.5rem;
+    --gap: 0.2rem;
+    align-items: center;
+    justify-content: left;
 }
 
 .nav-base {
@@ -143,6 +150,8 @@ body {
 /* footer */
 
 .footer-base {
+    position: sticky;
+    top: 100vh;
     background-color: var(--red-base);
     flex-direction: column;
     align-items: center;

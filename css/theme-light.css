@@ -27,8 +27,10 @@ body {
 
 .uppercase { text-transform: uppercase;}
 .cover-viewport { height: 100vh; width: 100%;}
+.txt-decor-none {text-decoration: none;}
 .list-style-none { list-style: none; padding: 0; margin: 0;}
 .list-inline { display: flex; gap: var(--list-gap, 2rem);}
+.margin-0 {margin:0;}
 .flex { display: flex; gap: var(--gap, 1rem);}
 .grid { display: grid; gap: var(--gap, 1rem);}
 
@@ -192,6 +194,14 @@ body {
     }
 }
 
+.blog-container {
+    height: 100%;
+    width: 100%;
+    --gap: 0;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .blog-card {
     border: solid 1px;
     border-color: var(--grey-fade);
@@ -200,27 +210,30 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
     overflow-wrap: break-word;
+    color: var(--black-base);
 }
 
-.blog-card h1 {
+.blog-card-heading {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;  
     overflow: hidden;
 }
 
-.blog-card p {
+.blog-card-para {
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;  
     overflow: hidden;
 }
 
-.blog-card>div {
+.blog-card-text {
     margin-block-start: 0.6rem;
     margin-inline-start: 0.8rem;
     margin-inline-end: 0.8rem;
-    margin-block-end: 0.6rem;
+    margin-block-end: 0rem;
+    flex-direction: column;
+    --gap: 0rem;
 }
 
 .blog-card h1 {
@@ -229,8 +242,14 @@ body {
 }
 
 .blog-card-cover {
-    height: 40%;
+    height: 50%;
     width: 100%;
+}
+
+.blog-card-cover img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .blog-card:hover {
@@ -250,4 +269,3 @@ body {
     justify-content: center;
     align-items: center;
 }
-

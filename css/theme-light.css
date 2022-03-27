@@ -234,6 +234,8 @@ body {
     margin-block-end: 0rem;
     flex-direction: column;
     --gap: 0rem;
+    justify-content: space-between;
+    height: 50%;
 }
 
 .blog-card h1 {

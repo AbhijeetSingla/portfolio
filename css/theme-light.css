@@ -49,13 +49,13 @@ body {
 
 .welcome-screen-arrow {
     margin-block-start: 5rem;
+    margin-block-end: 5rem;
 }
 
 .welcome-screen-div {
     background: linear-gradient(to bottom, transparent, white 100%);
     flex-flow: column nowrap;
-    justify-content: center ;
-    align-content: center;
+    justify-content: end;
     text-align: center;
     --gap: 0;
 }

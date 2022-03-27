@@ -194,6 +194,7 @@ body {
     border-color: var(--grey-fade);
     --max-spc-width: 100%;
     transition: 90ms ease-out;
+    overflow-y: auto;
 }
 .blog-card>div {
     margin-block-start: 0.6rem;

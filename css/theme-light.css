@@ -268,8 +268,11 @@ body {
 }
 
 .more-blogs {
+        text-decoration: none;
+    color: var(--black-base);
+}
+
+.more-blogs>div {
     justify-content: center;
     align-items: center;
-    text-decoration: none;
-    color: var(--black-base);
 }

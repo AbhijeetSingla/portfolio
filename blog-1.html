@@ -25,20 +25,26 @@
             </div>
             <div class="blog-card-text flex">
                 <div>
-                    <p>Mar 27, 2022</p>
-                    <h1 class="blog-card-heading">Clean Install windows 10 with zero bloatware</h1>
-                    <p class="blog-card-para">Windows 10 comes with a lot of bundled bloatware, which hogs down system resources. In this guide we remove bloatware from the windows ISO.</p>
+                    <div class="blog-stat read-mode flex"> 
+                        <p>Mar 27, 2022</p>
+                        <div class="flex">
+                            <img src="/media/icons/read-book.svg" alt="read time" width="16px">
+                            <p>5 minutes</p>
+                        </div>
+                    </div>
+                    <h1 class="blog-card-heading read-mode">Clean Install windows 10 with zero bloatware</h1>
+                    <p>Windows 10 comes with a lot of bundled bloatware, which hogs down system resources. In this guide we remove bloatware from the windows ISO.</p>
                     <h2>Contents:</h2>
                     <ol>
-                        <li>Disclaimer</li>
-                        <li>Prerequisites</li>
-                        <li>Procedure</li>
+                        <li><a href="#disclaimer" class="txt-decor-none">Disclaimer</a></li>
+                        <li><a href="#prerequisites" class="txt-decor-none">Prerequisites</a></li>
+                        <li><a href="#procedure" class="txt-decor-none">Procedure</a></li>
                     </ol>
                     <hr>
-                    <h3><span aria-hidden="true">1.</span> Disclaimer</h3>
+                    <h3 id="disclaimer"><span aria-hidden="true">1.</span> Disclaimer</h3>
                     <p>Installing a custom ROM will void your warranty. We are not responsible for bricked devices, dead SD cards, thermonuclear war, or you getting fired because the alarm app failed. <strong>YOU</strong> are choosing to make these modifications. If anything fails, we will surely help you but please don't consider us responsible for any of the modifications.</p>
                     <hr>
-                    <h3><span aria-hidden="true">2.</span> Prerequisites</h3>
+                    <h3 id="prerequisites"><span aria-hidden="true">2.</span> Prerequisites</h3>
                     <p>Alright, the scary warning aside, we need some things that need to be done before you install any custom ROM, listed below:</p>
                     <ol>
                         <li>Unlocked Bootloader (First step in the "Procedure" section)</li>
@@ -48,16 +54,43 @@
                     </ol>
                     <p>The <strong>best website</strong> for discussing or downloading anything related to <a href="https://www.xda-developers.com/" target="_blank" rel="noopener noreferrer">custom ROMs (xda-developers)</a>. You just need to google the name of your device and all the development done for it.</p>
                     <hr>
-                    <h3><span aria-hidden="true">3.</span> Procedure</h3>
+                    <h3 id="procedure"><span aria-hidden="true">3.</span> Procedure</h3>
                     <p>Please acknowledge that the procedure for every device is different, thus this guide has been created with keeping in mind that you will do some research too on your behalf to find the exact steps for your device.</p>
+
+                    <hr style="width: 10%;">
+
+                    <p>Step 1: Unlock the Bootloader</p>
+                    <p>The very first step is to unlock your bootloader, for that you need to enter developer options in your device. To access these options you need to the "Software Information" section in the device settings and tap 7 times on the build number, after which a prompt appears stating "You are now a developer!". Check your settings now, and you should find a sub-menu called "Developers options". Scroll and find OEM unlock and enable it, this allows you to unlock your device's bootloader.</p>
+                    <em>PLease keep in mind that this step in some devices is irreversible, for example: Samsung devices.</em>
+                    <p>Your device might require a restart.</p>
+                    <p>After this every device manufacturer has a different procedure, please google for your device on how to proceed after and unlock your bootloader. For example: on Samsung devices, after this step the device can be flashed with a custom recovery, but whereas on Xiaomi devices, they require a flash tool to unlock the bootloader.</p>
+
+                    <hr style="width: 10%;">
+
+                    <p>Step 2: Flash Recovery</p>
+                    <p>After that you have unlocked your device's bootloader, you now need to flash a custom recovery so as to help you flash custom ROMs.</p>
+                    <p>There are several choices for but we only recommend either of two listed:</p>
+                    <ol>
+                        <li>Team Win Recovery Project (TWRP)</li>
+                        <li>ClockWorkMod Recovery</li>
+                    </ol>
+                    <p>To flash the recovery, you either need to use "Fastboot" or some custom tool provided by your device's manufacturer.</p>
+                    <p>This exact information can be found in the xda's forums page about your device.</p>
+
+                    <hr style="width: 10%;">
+
+                    <p>Step 3: Flash The Custom ROM</p>
+                    <p>Now, that you have a custom recovery installed, you can finally start your journey towards "ROM hopping" (Google it :D)</p>
+                    <p>You will need to transfer the downloaded custom ROM for your device, into its internal storage. The internal storage is accessible once you're in recovery (its called the MTP mode).</p>
+                    <P>Now navigate (Steps shown below) inside your recovery to find the file you want to install, and then following the exact instructions provided by the ROM developer step by step.</P>
+                    <P>Steps to Navigate inside TWRP and ClockWorkMod Recovery:</P>
+                    <P>"Install" -> "select the storage from the option below" -> "select the file you want to flash" -> swipe to flash.</P>
+                    <P>Congratulations!!</P>
+                    <P>You have successfully installed a custom ROM on your device.</P>
+                    <p>Now reboot your device by tapping the home button at the bottom and navigating to "Reboot" -> "System"</p>
                     <hr>
 
 
-                </div>
-                <div>
-                    <div class="blog-stat flex">
-                    <img src="/media/icons/read-book.svg" alt="read time" width="16px"><p>5 minutes</p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -65,7 +98,7 @@
 
 
 
-    
+
 
     <footer class="footer-base flex">
         <div class="footer-heading">Social Links</div>

@@ -41,7 +41,7 @@ body {
 /* welcome screen */
 
 .fixed-bg {
-    background-image: url(/media/images/billa-hero-4K.svg);
+    background-image: url(/media/images/billa-hero-4K.webp);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;

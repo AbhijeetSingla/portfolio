@@ -23,9 +23,10 @@ body {
         --text-color: #f0f0f0;
         --blog-card-text-color: var(--text-color);
         --primary-base: #212121;
-        --primary-secondary: #F9F9F9;
-        --primary-hover: #FFE6E6;
+        --secondary-base: #404040;
+        --primary-hover: #252525;
         --bg-color: #121212;
+        --primary-link-color: #505050;
         --section-offwhite-color: var(--primary-base);
         --gradient-color: var(--bg-color);
         --white-base: #FFFFFF;
@@ -48,10 +49,11 @@ body {
     
     :root {
         --primary-base: #FF3737;
-        --primary-secondary: #f12a2a;
+        --secondary-base: #f12a2a;
         --primary-hover: #FFE6E6;
         --text-color: #ffffff;
         --blog-card-text-color: #000000;
+        --primary-link-color: #FF3737;
         --bg-color: #ffffff; 
         --gradient-color: var(--bg-color);
         --section-offwhite-color: #ebebeb;
@@ -69,12 +71,12 @@ body {
 
     .footer-base ::selection {
         background-color: var(--white-base);
-        color: var(--primary-secondary);
+        color: var(--secondary-base);
     }
 
     .nav-base ::selection {
         background-color: var(--white-base);
-        color: var(--primary-secondary);
+        color: var(--secondary-base);
     }
 }
 
@@ -246,7 +248,7 @@ body {
         margin-block-end: 2rem;
     }
 
-    .project-container {
+    .project-container.read-mode {
         padding-block-end: 3rem;
         padding-inline-start: 2rem;
     }
@@ -264,7 +266,7 @@ body {
         margin-block-end: 2rem;
     }
 
-    .project-container {
+    .project-container.read-mode {
         padding-block-end: 3rem;
         padding-inline-start: 1rem;
     }
@@ -376,8 +378,8 @@ body {
 /* links */
 
 .primary-link {
-    background-color: var(--primary-base);
-    border: 0.2rem solid var(--primary-base);
+    background-color: var(--primary-link-color);
+    border: 0.2rem solid var(--primary-link-color);
     padding-block-start: 0.6rem;
     padding-inline-start: 1rem;
     padding-inline-end: 1rem;
@@ -389,13 +391,13 @@ body {
 }
 
 .primary-link:hover {
-    background-color: var(--primary-secondary);
-    border-color: var(--primary-secondary);
+    background-color: var(--secondary-base);
+    border-color: var(--secondary-base);
 }
 
 .secondary-link {
     background-color: var(--bg-color);
-    border: 0.2rem solid var(--primary-base);
+    border: 0.2rem solid var(--primary-link-color);
     padding-block-start: 0.6rem;
     padding-inline-start: 1rem;
     padding-inline-end: 1rem;
@@ -416,7 +418,7 @@ body {
 
 /* projects */
 
-.project-container {
+.project-container.read-mode {
     padding-block-end: 3rem;
 }
 

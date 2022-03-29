@@ -16,6 +16,7 @@ body {
     --red: #ff0000;
     --red-base: #FF3737;
     --red-secondary: #f12a2a;
+    --red-hover: #FFE6E6;
     --white-base: #FFFFFF;
     --white-smoke-base: #EBEBEB;
     --black-base: #000000;
@@ -361,7 +362,7 @@ body {
 }
 
 .secondary-link:hover {
-    background-color: #FFE6E6;
+    background-color: var(--red-hover);
 }
 
 .primary-link + .secondary-link {

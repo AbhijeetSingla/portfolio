@@ -404,7 +404,7 @@ body {
     padding-block-end: 0.6rem;
     font-size: 1.1rem;
     font-weight: 500;
-    color: var(--primary-base);
+    color: var(--text-color);
     text-decoration: none;
 }
 

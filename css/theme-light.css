@@ -348,7 +348,7 @@ body {
 
 .blog-card:not(.nohover):hover {
     transition: 150ms ease-in;
-    transform: scale(105%);
+    transform: scale(1.05);
 }
 
 .author-info {

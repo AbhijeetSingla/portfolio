@@ -27,6 +27,8 @@ body {
         --primary-hover: #252525;
         --bg-color: #121212;
         --primary-link-color: #505050;
+        --primary-link-text-color: var(--text-color);
+        --secondary-link-text-color: var(--primary-link-color);
         --section-offwhite-color: var(--primary-base);
         --gradient-color: var(--bg-color);
         --white-base: #FFFFFF;
@@ -54,6 +56,8 @@ body {
         --text-color: #ffffff;
         --blog-card-text-color: #000000;
         --primary-link-color: #FF3737;
+        --primary-link-text-color:var(--text-color);
+        --secondary-link-text-color: var(--primary-link-color);
         --bg-color: #ffffff; 
         --gradient-color: var(--bg-color);
         --section-offwhite-color: #ebebeb;
@@ -404,7 +408,7 @@ body {
     padding-block-end: 0.6rem;
     font-size: 1.1rem;
     font-weight: 500;
-    color: var(--text-color);
+    color: var(--secondary-link-text-color);
     text-decoration: none;
 }
 

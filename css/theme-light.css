@@ -420,6 +420,12 @@ body {
     margin-inline-start: 1rem;
 }
 
+.link-near-border {
+    margin-block-end: 2rem;
+    --gap: 1rem;
+    justify-content: center;
+}
+
 /* projects */
 
 .project-container.read-mode {

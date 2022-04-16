@@ -1,0 +1,12 @@
+div.fixed-bg {
+    background-image: url(/media/images/billa-hero-4K.svg);
+}
+
+.link-near-border {
+    --gap: 1rem;
+    justify-content: center;
+}
+
+div.blog-card-cover:not(.read-mode) {
+    height: 50%;
+}

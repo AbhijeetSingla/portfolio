@@ -28,7 +28,7 @@ body {
         --bg-color: #121212;
         --primary-link-color: #505050;
         --primary-link-text-color: var(--text-color);
-        --secondary-link-text-color: var(--primary-link-color);
+        --secondary-link-text-color: var(--primary-link-text-color);
         --section-offwhite-color: var(--primary-base);
         --gradient-color: var(--bg-color);
         --white-base: #FFFFFF;
@@ -300,6 +300,10 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
     overflow-wrap: break-word;
+    
+}
+
+.blog-card > * {
     color: var(--blog-card-text-color);
 }
 

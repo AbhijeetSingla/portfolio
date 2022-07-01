@@ -307,6 +307,10 @@ body {
     color: var(--blog-card-text-color);
 }
 
+.toc a {
+    color: var(--blog-card-text-color);
+}
+
 .blog-card-hr {
     color: var(--hr-color);
 }

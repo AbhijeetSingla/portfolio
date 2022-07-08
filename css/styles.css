@@ -317,7 +317,9 @@ body {
 }
 
 .blog-card-hr {
-    color: var(--hr-color);
+    border-color: var(--hr-color);
+    border-width: 1px;
+    border-style: solid;
 }
 
 .blog-card-heading:not(.read-mode) {

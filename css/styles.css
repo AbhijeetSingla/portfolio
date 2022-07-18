@@ -96,9 +96,14 @@ body {
 .txt-decor-none {text-decoration: none;}
 .list-style-none { list-style: none; padding: 0; margin: 0;}
 .list-inline { display: flex; gap: var(--list-gap, 2rem);}
+.d-none {display: none;}
 .margin-0 {margin:0;}
 .flex { display: flex; gap: var(--gap, 1rem);}
 .grid { display: grid; gap: var(--gap, 1rem);}
+.mt-1 {margin-block-start: 1rem;}
+.mb-1 {margin-block-end: 1rem;}
+.ml-1 {margin-inline-start: 1rem;}
+.mr-1 {margin-inline-end: 1rem;}
 
 /* welcome screen */
 
@@ -446,6 +451,17 @@ a[disabled] {
     cursor:not-allowed;
 }
 
+a[disabled]::after {
+    content: "The source code is hidden to maintain the site.";
+    display: none;
+    position: relative;
+    
+}
+
+/* a[disabled]:hover::after {
+    display: block;
+} */
+
 /* button */
 
 /* button:disabled, button[disabled] {
@@ -458,6 +474,7 @@ a[disabled] {
 
 .project-container.read-mode {
     padding-block-end: 3rem;
+    margin-block-end: 1rem;
 }
 
 .project-container>p {

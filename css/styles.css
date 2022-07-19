@@ -26,6 +26,7 @@ body {
         --secondary-base: #404040;
         --primary-hover: #252525;
         --bg-color: #121212;
+        --nav-bg-color: hsl(0 0% 7% / 0.9);
         --link-text-color: #b22222;
         --primary-link-color: #505050;
         --primary-link-text-color: var(--text-color);
@@ -64,6 +65,7 @@ body {
         --primary-link-text-color:var(--text-color);
         --secondary-link-text-color: var(--primary-link-color);
         --bg-color: #ffffff; 
+        --nav-bg-color: hsl(0 0% 100% / 0.6);
         --gradient-color: var(--bg-color);
         --section-offwhite-color: #ebebeb;
         --white-base: #FFFFFF;
@@ -449,26 +451,19 @@ body {
 a[disabled] {
     opacity: 0.5;
     cursor:not-allowed;
+    isolation: isolate;
+    z-index: 0;
 }
 
-a[disabled]::after {
-    content: "The source code is hidden to maintain the site.";
-    display: none;
+a[disabled]:hover::after {
+    content: attr(data-describedby);
+    z-index: 1;
     position: relative;
-    
+    inset-block-start: 0;
+    inset-block-end: 0;
+    inset-inline-start: 500px;
+    inset-inline-end: 0;
 }
-
-/* a[disabled]:hover::after {
-    display: block;
-} */
-
-/* button */
-
-/* button:disabled, button[disabled] {
-    background-color: rgba(239, 239, 239, 0.3);
-    color:rgba(16, 16, 16, 0.3);
-    border-color: rgba(118, 118, 118, 0.3);
-} */
 
 /* projects */
 

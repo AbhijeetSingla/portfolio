@@ -311,7 +311,7 @@ body {
     transition: 90ms ease-out;
     overflow-x: hidden;
     overflow-y: hidden;
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
     
 }
 

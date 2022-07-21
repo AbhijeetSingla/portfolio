@@ -96,6 +96,7 @@ body {
 .uppercase { text-transform: uppercase;}
 .cover-viewport { height: 100vh; width: 100%;}
 .txt-decor-none {text-decoration: none;}
+.txt-capitalize {text-transform: capitalize;}
 .list-style-none { list-style: none; padding: 0; margin: 0;}
 .list-inline { display: flex; gap: var(--list-gap, 2rem);}
 .d-none {display: none;}
